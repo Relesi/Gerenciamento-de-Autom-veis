@@ -1,0 +1,616 @@
+@charset "utf-8";
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	background-color: #DFDFDF;
+}
+.vermelho125 {
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #F00;
+}
+.input_login{
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: left;
+	font-size: 16px;
+	color: #333;
+	background-color: #FFF;
+	border: 1px solid #666;
+	border-radius: 8px;
+	padding: 8px;
+	margin: 4px;
+	width: 90%;
+	}
+.input_busca{
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: left;
+	font-size: 16px;
+	color: #333;
+	background-color: #FFF;
+	border: 1px solid #666;
+	border-radius: 8px;
+	padding: 8px;
+	margin: 4px;
+	width: 50%;
+	}
+#div_topo {
+	text-align: center;
+	width: auto;
+	background: #000;
+	background-image: linear-gradient(to bottom, #000, #1B1B1B, #272727, #1B1B1B, #000);
+	padding: 8px;
+	border-top: 4px solid #333;
+	border-bottom: 1px solid #666;
+}
+#div_rodape {
+	text-align: center;
+	width: auto;
+	background: #000;
+	background-image: linear-gradient(to bottom, #000, #1B1B1B, #272727, #1B1B1B, #000);
+	padding: 8px;
+	border-top: 1px solid #000;
+	border-bottom: 4px solid #333;
+}
+#div_menu_2 {
+	text-align: center;
+	width: auto;
+	background: #000;
+	background-image: linear-gradient(to bottom, #000, #1B1B1B, #272727, #1B1B1B, #000);
+	padding: 8px;
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+}
+#div_seta_dir {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-image: url(../imagens/seta_dir.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+#div_login {
+	text-align: center;
+	width: auto;
+	height: auto;
+	padding: 20px;
+}
+#div_centralizar {
+	text-align: center;
+	width: auto;
+	padding: 8px;
+}
+#div_conteudo_ajuste {
+	padding-top: 4px;
+	padding-bottom: 20px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+#div_listar {
+	width: auto;
+	height: auto;
+	padding: 8px;
+	margin: 16px;
+	background: #DBFFD2;
+	border: 1px solid #090;
+	border-radius: 8px;
+}
+#div_listar_busca {
+	width: auto;
+	height: auto;
+	padding: 8px;
+	margin: 4px;
+	background: #DBFFD2;
+	border: 1px solid #090;
+	border-radius: 8px;
+}
+#div_listar_busca_manutencao {
+	width: auto;
+	height: auto;
+	padding: 8px;
+	background: #FFF3CE;
+	border-top: 1px dashed #666;
+}
+#div_resultado_zero {
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: left;
+	color: #066;
+	width: auto;
+	height: auto;
+	padding: 8px;
+	margin: 4px;
+}
+#div_erro {
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: left;
+	color: #F00;
+	width: auto;
+	height: auto;
+	padding: 8px;
+	margin: 4px;
+	background: #FFECEC;
+	border: 1px solid #F00;
+}
+#div_sucesso {
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: left;
+	color: #030;
+	width: auto;
+	height: auto;
+	padding: 8px;
+	margin: 4px;
+	background: #DBFFD2;
+	border: 1px solid #090;
+}
+#div_perfil {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 17px;
+	text-align: left;
+	color: #000;
+	width: auto;
+	height: auto;
+	padding: 8px;
+	margin: 4px;
+}
+#div_administrador {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 17px;
+	text-align: left;
+	color: #000;
+	background: #C7C7C7;
+	border: 1px solid #666;
+	border-radius: 8px;
+	width: auto;
+	height: auto;
+	padding: 8px;
+	margin: 4px;
+}
+.fonte_br_16 {	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #D0C091;
+}
+.fonte_pr_14 {	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #333;
+}
+.fonte_pr_16 {	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 19px;
+	font-weight: bold;
+	color: #333;
+}
+.fonte_pr_16_b {	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #666;
+}
+.fonte_14_r {	
+	font-family: "Times New Roman", Times, serif;
+	font-size: 17px;
+	font-weight: bold;
+	color: #353535;
+}
+.fonte_14_rb {	
+	font-family: "Times New Roman", Times, serif;
+	font-size: 17px;
+	font-weight: bold;
+	color: #008080;
+}
+.fonte_sucesso {	
+	font-family: "Times New Roman", Times, serif;
+	font-size: 17px;
+	font-weight: bold;
+	color: #066;
+}
+.fonte_azul_19 {	
+	font-family: "Times New Roman", Times, serif;
+	font-size: 19px;
+	font-weight: bold;
+	color: #066;
+}
+.fonte_adm_1 {	
+	font-family: "Times New Roman", Times, serif;
+	font-size: 19px;
+	color: #088;
+}
+.fonte_adm_2 {	
+	font-family: "Times New Roman", Times, serif;
+	font-size: 26px;
+	font-weight: bold;
+	color: #066;
+}
+ul#menu {
+	margin: 0;
+	padding: 0;
+	}
+ul#menu li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #FFF;
+	font-weight: bold;
+	text-align: left;
+	list-style-type: none;
+}
+ul#menu li a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 8px;
+	border-bottom: 1px solid #666;
+	display: block;
+	background: #000;
+	background-image: linear-gradient(to bottom, #333, #333, #242424, #202020, #333);
+}
+ul#menu li a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 8px;
+	border-bottom: 1px solid #666;
+	display: block;
+	background: #000;
+	background-image: linear-gradient(to bottom, #444, #3E3E3E, #484848, #3E3E3E, #444);
+}
+ul#menu li a:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 8px;
+	border-bottom: 1px solid #666;
+	display: block;
+	background: #000;
+	background-image: linear-gradient(to bottom, #039, #06C, #06F, #06C, #039);
+}
+ul#menu_2 {
+	margin: 0;
+	padding: 0;
+	width: auto;
+	}
+ul#menu_2 li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	font-weight: bold;
+	text-align: center;
+	list-style-type: none;
+	display: inline;
+	}
+ul#menu_2 li a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+	padding-top: 12px;
+	padding-bottom: 9px;
+	padding-left: 26px;
+	padding-right: 26px;
+	border: 1px solid #666;
+	border-radius: 8px;
+	width: auto;
+	display: inline-block;
+	background: #000;
+	background-image: linear-gradient(to bottom, #333, #333, #242424, #202020, #333);
+}
+ul#menu_2 li a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+	padding-top: 12px;
+	padding-bottom: 9px;
+	padding-left: 26px;
+	padding-right: 26px;
+	border: 1px solid #666;
+	border-radius: 8px;
+	width: auto;
+	display: inline-block;
+	background: #000;
+	background-image: linear-gradient(to bottom, #444, #3E3E3E, #484848, #3E3E3E, #444);
+}
+ul#menu_2 li a:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+	padding-top: 12px;
+	padding-bottom: 9px;
+	padding-left: 26px;
+	padding-right: 26px;
+	border: 1px solid #666;
+	border-radius: 8px;
+	width: auto;
+	display: inline-block;
+	background: #000;
+	background-image: linear-gradient(to bottom, #039, #06C, #06F, #06C, #039);
+}
+ul#menu_3 {
+	margin: 0;
+	padding: 0;
+	width: auto;
+	}
+ul#menu_3 li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #666;
+	font-weight: bold;
+	text-align: center;
+	list-style-type: none;
+	display: inline;
+	}
+ul#menu_3 li a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #666;
+	font-weight: bold;
+	text-decoration: none;
+	padding-top: 12px;
+	padding-bottom: 9px;
+	padding-left: 26px;
+	padding-right: 26px;
+	border: 1px solid #666;
+	border-radius: 8px;
+	width: auto;
+	display: inline-block;
+	background: #000;
+	background-image: linear-gradient(to bottom, #CCC, #EAEAEA, #FFF, #EAEAEA, #CCC);
+}
+ul#menu_3 li a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+	padding-top: 12px;
+	padding-bottom: 9px;
+	padding-left: 26px;
+	padding-right: 26px;
+	border: 1px solid #666;
+	border-radius: 8px;
+	width: auto;
+	display: inline-block;
+	background: #000;
+	background-image: linear-gradient(to bottom, #F4F4F4, #EAEAEA, #FFF, #EAEAEA, #F4F4F4);
+}
+ul#menu_3 li a:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+	padding-top: 12px;
+	padding-bottom: 9px;
+	padding-left: 26px;
+	padding-right: 26px;
+	border: 1px solid #666;
+	border-radius: 8px;
+	width: auto;
+	display: inline-block;
+	background: #000;
+	background-image: linear-gradient(to bottom, #039, #06C, #06F, #06C, #039);
+}
+ul#menu_4 {
+	margin: 0;
+	padding: 0;
+	width: auto;
+	}
+ul#menu_4 li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #666;
+	font-weight: bold;
+	text-align: center;
+	list-style-type: none;
+	display: inline;
+	}
+ul#menu_4 li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #666;
+	font-weight: bold;
+	text-align: left;
+	list-style-type: none;
+	display: block;
+	}
+ul#menu_4 li a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #666;
+	font-weight: bold;
+	text-decoration: none;
+	padding-top: 12px;
+	padding-bottom: 9px;
+	padding-left: 26px;
+	padding-right: 26px;
+	border: 1px solid #666;
+	border-radius: 8px;
+	width: auto;
+	display: block;
+	background: #000;
+	background-image: linear-gradient(to bottom, #CCC, #EAEAEA, #FFF, #EAEAEA, #CCC);
+}
+ul#menu_4 li a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+	padding-top: 12px;
+	padding-bottom: 9px;
+	padding-left: 26px;
+	padding-right: 26px;
+	border: 1px solid #666;
+	border-radius: 8px;
+	width: auto;
+	display: block;
+	background: #000;
+	background-image: linear-gradient(to bottom, #F4F4F4, #EAEAEA, #FFF, #EAEAEA, #F4F4F4);
+}
+ul#menu_4 li a:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+	padding-top: 12px;
+	padding-bottom: 9px;
+	padding-left: 26px;
+	padding-right: 26px;
+	border: 1px solid #666;
+	border-radius: 8px;
+	width: auto;
+	display: block;
+	background: #000;
+	background-image: linear-gradient(to bottom, #039, #06C, #06F, #06C, #039);
+}
+.btn_login {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight: bold;
+	font-size: 17px;
+	color: #333;
+	border: 1px solid #000;
+	border-radius: 16px;
+	background: linear-gradient(to top, #EAEAEA, #CCC);
+	width: 50%;
+	height: auto;
+	padding: 5px;
+	cursor: pointer;
+	box-shadow: inset 0px 1px 0px #709F59, 2px 2px 2px #37592B;
+}
+.btn_login:hover {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight: bold;
+	font-size: 17px;
+	color: #069;
+	border: 1px solid #069;
+	border-radius: 16px;
+	background: linear-gradient(to top, #CCC, #EAEAEA);
+	width: 50%;
+	height: auto;
+	padding: 5px;
+	cursor: pointer;
+	box-shadow: inset 0px 1px 0px #09F, 2px 2px 2px #039;
+}
+.btn_login:active {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight: bold;
+	font-size: 17px;
+	color: #069;
+	border: 1px solid #069;
+	border-radius: 16px;
+	background: linear-gradient(to top, #CCC, #EAEAEA);
+	width: 50%;
+	height: auto;
+	padding: 5px;
+	cursor: pointer;
+	box-shadow: inset 0px 1px 0px #0CF, 2px 2px 2px #00009F;
+	box-shadow: inset 1px 1px 8px 1px #039;
+}	
+.btn_editar {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight: bold;
+	font-size: 17px;
+	color: #333;
+	border: 1px solid #000;
+	background: linear-gradient(to top, #EAEAEA, #CCC);
+	width: auto;
+	height: auto;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+	cursor: pointer;
+	box-shadow: inset 0px 0px 0px #709F59, 2px 2px 2px #37592B;
+}
+.btn_editar:hover {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight: bold;
+	font-size: 17px;
+	color: #069;
+	border: 1px solid #069;
+	background: linear-gradient(to top, #CCC, #EAEAEA);
+	width: auto;
+	height: auto;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+	cursor: pointer;
+	box-shadow: inset 0px 0px 0px #09F, 2px 2px 2px #039;
+}
+.btn_editar:active {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight: bold;
+	font-size: 17px;
+	color: #333;
+	border: 1px solid #000;
+	background: linear-gradient(to top, #CCC, #EAEAEA);
+	width: auto;
+	height: auto;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+	cursor: pointer;
+	box-shadow: inset 0px 0px 0px #0CF, 2px 2px 2px #00009F;
+	box-shadow: inset 1px 1px 8px 1px #039;
+}
+.btn_arq {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 10px;
+	color: #333;
+	border: 1px solid #000;
+	background: linear-gradient(to top, #EAEAEA, #CCC);
+	width: auto;
+	height: auto;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	cursor: pointer;
+	box-shadow: inset 0px 0px 0px #709F59, 2px 2px 2px #37592B;
+}
+.btn_arq:hover {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 10px;
+	color: #069;
+	border: 1px solid #069;
+	background: linear-gradient(to top, #CCC, #EAEAEA);
+	width: auto;
+	height: auto;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	cursor: pointer;
+	box-shadow: inset 0px 0px 0px #09F, 2px 2px 2px #039;
+}
+.btn_arq:active {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 10px;
+	color: #333;
+	border: 1px solid #000;
+	background: linear-gradient(to top, #CCC, #EAEAEA);
+	width: auto;
+	height: auto;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	cursor: pointer;
+	box-shadow: inset 0px 0px 0px #0CF, 2px 2px 2px #00009F;
+	box-shadow: inset 1px 1px 8px 1px #039;
+}	
